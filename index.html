@@ -278,6 +278,8 @@ footer p{margin:0 0 .6em}
 .bldg .side p{font-size:16.5px;color:var(--ink-2);margin:16px 0 0}
 @media (max-width:760px){.bldg{grid-template-columns:1fr}}
 </style>
+<!-- visitor statistics: Umami Cloud, cookieless, no personal data stored -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="ba6b151b-13ba-4058-820a-4b4e4e2a3a7c"></script>
 </head>
 <body>
 
@@ -288,17 +290,17 @@ footer p{margin:0 0 .6em}
       <small class="es">Grupo independiente de propietarios · Beach · Downtown · Oceanfront · sin vínculo con The Fives, TM Grupo Inmobiliario ni Hilton</small>
     </div>
     <div class="lang" role="group" aria-label="Language">
-      <button type="button" id="btn-en" aria-pressed="true" data-set-lang="en">EN</button>
-      <button type="button" id="btn-es" aria-pressed="false" data-set-lang="es">ES</button>
+      <button type="button" id="btn-en" aria-pressed="true" data-set-lang="en" data-umami-event="language" data-umami-event-lang="en">EN</button>
+      <button type="button" id="btn-es" aria-pressed="false" data-set-lang="es" data-umami-event="language" data-umami-event-lang="es">ES</button>
     </div>
   </div>
 </header>
 
 <nav class="tabs" aria-label="Sections">
   <div class="wrap">
-    <a href="#case" data-tab="case" aria-current="page"><span class="en">The owners' case</span><span class="es">El caso de los propietarios</span></a>
-    <a href="#background" data-tab="background"><span class="en">TM Grupo &amp; the Serna family</span><span class="es">TM Grupo y la familia Serna</span></a>
-    <a href="#group" data-tab="group"><span class="en">The owners' group</span><span class="es">El grupo de propietarios</span><span class="soon en">soon</span><span class="soon es">pronto</span></a>
+    <a href="#case" data-tab="case" data-umami-event="tab" data-umami-event-tab="owners-case" aria-current="page"><span class="en">The owners' case</span><span class="es">El caso de los propietarios</span></a>
+    <a href="#background" data-tab="background" data-umami-event="tab" data-umami-event-tab="tm-serna-family"><span class="en">TM Grupo &amp; the Serna family</span><span class="es">TM Grupo y la familia Serna</span></a>
+    <a href="#group" data-tab="group" data-umami-event="tab" data-umami-event-tab="owners-group"><span class="en">The owners' group</span><span class="es">El grupo de propietarios</span><span class="soon en">soon</span><span class="soon es">pronto</span></a>
   </div>
 </nav>
 
@@ -312,8 +314,8 @@ footer p{margin:0 0 .6em}
       <p class="lede en">An independent group of owners of residences at The Fives Beach, The Fives Downtown and The Fives Oceanfront in the Riviera Maya, developed and operated by TM Grupo Inmobiliario of Torrevieja, Spain, a company controlled by the Serna Lorente family, organising to obtain the accounting, the benefits and the representation that our contracts and the law of Quintana Roo already give us.</p>
       <p class="lede es">Un grupo independiente de propietarios de residencias en The Fives Beach, The Fives Downtown y The Fives Oceanfront, en la Riviera Maya, desarrolladas y operadas por TM Grupo Inmobiliario, de Torrevieja (España), empresa controlada por la familia Serna Lorente, que se organiza para obtener las cuentas, los beneficios y la representación que nuestros contratos y la ley de Quintana Roo ya nos otorgan.</p>
       <div class="cta">
-        <a class="btn primary en" href="#join">Join the owners' group</a>
-        <a class="btn primary es" href="#join">Únete al grupo de propietarios</a>
+        <a class="btn primary en" href="#join" data-umami-event="cta-join" data-umami-event-lang="en">Join the owners' group</a>
+        <a class="btn primary es" href="#join" data-umami-event="cta-join" data-umami-event-lang="es">Únete al grupo de propietarios</a>
         <a class="btn en" href="#contracts">What the contracts say</a>
         <a class="btn es" href="#contracts">Qué dicen los contratos</a>
       </div>
@@ -587,7 +589,7 @@ footer p{margin:0 0 .6em}
       <p class="prose es">Lo que envíes lo lee únicamente el organizador y se usa sólo para contactarte sobre el grupo. Nunca se comparte con The Fives, TM Grupo ni con nadie más.</p>
       <div class="contactbox">
         <p class="k"><span class="en">Write to the group</span><span class="es">Escribe al grupo</span></p>
-        <p class="addr" id="contact-addr" data-addr="owners@thefivesowners.com"><a href="mailto:owners@thefivesowners.com">owners@thefivesowners.com</a></p>
+        <p class="addr" id="contact-addr" data-addr="owners@thefivesowners.com"><a href="mailto:owners@thefivesowners.com" data-umami-event="email-address-click">owners@thefivesowners.com</a></p>
         <div class="row">
           <button type="button" class="copy" id="copy-addr" hidden><span class="en">Copy address</span><span class="es">Copiar dirección</span></button>
           <span class="status info" id="copy-status" role="status" aria-live="polite" style="display:none;margin-top:0;padding:6px 10px"></span>
@@ -597,8 +599,8 @@ footer p{margin:0 0 .6em}
       </div>
       <p class="orline"><span class="en">Or start with a ready-made email</span><span class="es">O empieza con un correo ya preparado</span></p>
       <div class="cta" style="margin-top:6px">
-        <a class="btn primary en" href="mailto:owners@thefivesowners.com?subject=The%20Fives%20owner%20-%20joining%20the%20group&amp;body=Property (Beach, Downtown or Oceanfront):%0D%0AResidence number:%0D%0AName:%0D%0ACountry:%0D%0A%0D%0AWhat happened:%0D%0A">Write to the group</a>
-        <a class="btn primary es" href="mailto:owners@thefivesowners.com?subject=Propietario%20The%20Fives%20-%20unirme%20al%20grupo&amp;body=Propiedad (Beach, Downtown u Oceanfront):%0D%0AN%C3%BAmero de residencia:%0D%0ANombre:%0D%0APa%C3%ADs:%0D%0A%0D%0AQu%C3%A9 pas%C3%B3:%0D%0A">Escribir al grupo</a>
+        <a class="btn primary en" data-umami-event="email-button" data-umami-event-lang="en" href="mailto:owners@thefivesowners.com?subject=The%20Fives%20owner%20-%20joining%20the%20group&amp;body=Property (Beach, Downtown or Oceanfront):%0D%0AResidence number:%0D%0AName:%0D%0ACountry:%0D%0A%0D%0AWhat happened:%0D%0A">Write to the group</a>
+        <a class="btn primary es" data-umami-event="email-button" data-umami-event-lang="es" href="mailto:owners@thefivesowners.com?subject=Propietario%20The%20Fives%20-%20unirme%20al%20grupo&amp;body=Propiedad (Beach, Downtown u Oceanfront):%0D%0AN%C3%BAmero de residencia:%0D%0ANombre:%0D%0APa%C3%ADs:%0D%0A%0D%0AQu%C3%A9 pas%C3%B3:%0D%0A">Escribir al grupo</a>
       </div>
       <p class="note en">If the button does not open your mail program, copy the address above into a new email.</p>
       <p class="note es">Si el botón no abre tu programa de correo, copia la dirección de arriba en un correo nuevo.</p>
